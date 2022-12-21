@@ -1,3 +1,10 @@
+/* BODY */
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
 /* HEADER */
 
 header{
@@ -5,6 +12,7 @@ header{
     width: 100%;
     position: fixed;
     background-color: #0084FD;
+    z-index: 1;
 }
 
 header .container{
@@ -16,16 +24,36 @@ header .links-header{
     height: 70px;
 }
 
+header .logo{
+    padding-top: 18px;
+}
+
 header .link{
     display: inline-block;
     color: white;
     line-height: 70px;
+    padding: 0 1rem;
 }
 
+header .header-btn{
+    display: inline-block;
+    background-color: white;
+    padding: 10px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+header .hamburger-menu {
+    color: white;
+    font-size: 1.5rem;
+    line-height: 70px;
+    display: none;
+}
 /* CARD SECTION */
 
 .card-section{
     padding-top: 8rem;
+    margin-bottom: 4rem;
 }
 
 .card-row{
@@ -34,27 +62,399 @@ header .link{
     
 }
 
-.big-card{
-    width: calc(66% - 20px);
-    height: 200px;
-    background-color: #B5DDFF;
+.card-section h3{
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #0084FD;
+    padding: 2rem 0;
 }
 
-.card{
-    width: calc(33% - 20px);
-    height: 200px;
+.big-card{
+    width: calc(66% - 20px);
     background-color: #B5DDFF;
+    border-radius: 30px;
 }
+
 
 .big-card .content{
     width: 50%;
     margin-left: 1.3rem
 }
 
+.big-card p{
+    padding: 0 1rem;
+}
+
+.big-card .app-store-btn{
+    display: inline-block;
+    background-color: #0084FD;
+    color: white;
+    font-size: 1.3rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+    padding: 10px 20px;
+    border-radius: 20px;
+    margin-top: 2rem;
+    margin-bottom: 4rem;
+}
+
+.big-card .app-store-btn i{
+    margin-right: 5px;
+}
+
+
+
+
 .big-card .image{
     width: 50%;
-    height: 200px;
 }
+
+.big-card img{
+    width: 75%;
+    height: 100%;
+}
+
+.card{
+    width: calc(33% - 20px);
+    background-color: #B5DDFF;
+    border-radius: 30px;
+}
+
+.card .icon{
+    text-align: center;
+    font-size: 2rem;
+}
+
+.card i{
+    font-size: 4rem;
+    color: #0084FD;
+    padding-top: 1.5rem;
+}
+
+.card h3{
+    text-align: center;
+    font-size: 1.5rem;
+    padding: 2rem 0;
+
+}
+
+.card p{
+    text-align: center;
+    line-height: 1.5em;
+    padding: 0rem 2rem;
+    margin-bottom: 2rem;
+}
+
+/* PLANNING */
+
+
+.planning{
+    background-color: #9792E4;
+}
+
+.planning .left-col{
+    width: 50%;
+    margin-top: 3rem;
+    margin-right: 1rem;
+    color: white;
+
+}
+
+.planning .left-col img{
+    margin-bottom: 3.5rem;
+}
+
+.planning .left-col h3{
+    margin-bottom: 2rem;
+    font-size: 2rem;
+}
+
+
+.planning .right-col {
+    width: 50%;
+    margin-left: 1rem;
+}
+
+.planning .card{
+    width: 350px;
+    height: 510px;
+    background-color: white;
+    margin-top: 32%;
+    margin-bottom: 4.5rem;
+}
+
+.planning .card h4{
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.planning .card p {
+    text-align: center;
+    margin-bottom: 1rem;
+    list-style: 1.5rem;
+}
+
+/* PARTNERS */
+
+.partners .testimonials{
+    text-align: center;
+    margin: 2.5rem 0;
+
+}
+
+.partners h2{
+    text-align: center;
+    font-size: 1.7rem;
+    color: #9792E4;
+    margin-bottom: 1.5rem;
+}
+
+.partners p{
+    text-align: center;
+    line-height: 1.5em;
+    margin-bottom: 1.5rem;
+}
+
+.testimonial{
+    background-color: #9792E4;
+    color: white;
+    border-radius: 30px;
+    margin-top:2rem ;
+    margin-bottom: 5rem;
+}
+
+
+.testimonial .photo{
+    width: 20%;
+}
+
+
+
+.testimonial .cit{
+    width: 80%;
+}
+
+.partners .photo-container{
+    width: 20%;
+    aspect-ratio: 1;
+    background-image:url(./../img/testimonial1.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 50%;
+    margin-top: 1rem;
+    margin-left: .7rem;
+    margin-bottom: 2rem;
+}
+
+.partners .cit p{
+    padding-top: 5rem;
+    padding-left: 2rem;
+    text-align: left;
+}
+
+.partners .cit .name-testimonial{
+    padding-left: 2rem;
+    
+}
+
+/* BENEFITS */
+
+.benefits{
+    background-color: #9792E4;
+}
+
+.benefits h2{
+    text-align: center;
+    font-size: 2rem;
+    padding: 3rem 0;
+    color: white;
+}
+
+.benefits .benefits-row{
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.benefits-row .benefits-card{
+    width: calc(100% / 3 - 20px);
+    background-color: white;
+    border-radius: 30px;
+}
+
+.benefits-card .number{
+    font-size: 3rem;
+    font-weight: bold;
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+    padding-left: 1rem;
+    color: #9792E4;
+}
+
+.benefits-card h4{
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding-left: 1rem;
+    padding-bottom: 1rem;
+    color: #9792E4;
+}
+
+.benefits-card p{
+    padding-left: 1rem;
+    line-height: 1.7rem;
+    padding-bottom: 1rem;
+}
+
+.benefits-card .btn-more{
+    display: inline-block;
+    margin-left: 1rem;
+    margin-bottom: 1rem;
+    background-color: #9792E4;
+    border-radius: 20px;
+    padding: 5px 20px;
+
+}
+
+
+/* About Us */
+
+.about-us{
+    margin-top: 6rem;
+}
+
+.about-us .big-space{
+    width: 60%;
+}
+
+.big-space h2{
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #9792E4;
+}
+
+.big-space p{
+    margin-top: 1rem;
+    margin-bottom: 4rem;
+    line-height: 1.7;
+}
+
+.small-space{
+    width: 40%;
+    flex-direction: column;
+
+}
+
+
+.small-space .about-photo{
+    width: 60%;
+    aspect-ratio: 1;
+    background-image: url(./../img/testimonial1.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 50%;
+    position: relative;
+}
+
+.small-space .about-photo i{
+    position: absolute;
+    right: 0;
+    font-size: 5rem;
+    color: #9792E4;
+}
+
+.small-space p{
+    font-size: 2rem;
+    line-height: 2rem;
+    color: #9792E4;
+    padding-bottom: 1rem;
+}
+
+.small-space .linkedin-btn{
+    background-color: #9792E4;
+    color: white;
+    padding: 5px;
+    border-radius: 10px;
+    width: 183px;
+}
+
+
+/* FREE */
+
+.free{
+    background-color: #9792E4;
+}
+
+.free .text{
+    text-align: center;
+    color: lightgrey;
+    font-size: 1rem;
+    padding-top: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+.free h3{
+ text-align: center;
+ color: white;
+ font-size: 2.5rem;
+ font-weight: bold;
+ margin-bottom: 2rem;
+}
+
+.free h2{
+    text-align: center;
+    color: #FDC15F;
+    font-size: 4rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+}
+
+.free p{
+    text-align: center;
+    color: white;
+    margin-bottom: 2rem;
+}
+
+.free .started-btn{
+    text-align: center;
+    background-color: white;
+    color: #9792E4;
+    padding: 15px 30px;
+    border-radius: 20px;
+    margin-bottom: 1rem;
+}
+
+.free .copyright{
+    text-align: center;
+    font-size: .9rem;
+    color: white;
+    padding-bottom: 3rem;
+}
+
+.free .copyright a{
+    color: white;
+}
+
+
+/* FOOTER */
+
+footer{
+    background-color: #333333;
+    color: white;
+}
+
+footer p{
+    text-align: center;
+    padding-top: 2rem;
+    padding-bottom: 3rem;
+}
+
+
+
+
+
+
+
+
+
 
 
 

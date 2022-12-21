@@ -1,0 +1,95 @@
+/* TABLET */
+
+@media screen and (max-width:768px){
+   /* HEADER */
+
+    .links-header{
+    display: none;
+   }
+
+   header .hamburger-menu{
+    display: block;
+    cursor: pointer;
+   }
+
+   /* CARD SECTION */
+   .card-section .big-card{
+    flex-direction: column;
+   }
+   
+   .card-section .big-card .content, img{
+    width: 100%;
+   }
+
+
+
+   
+    /* PLANNING */
+    .small-container{
+        flex-direction: column;
+    }
+
+    .small-container .left-col{
+        width: 100%;
+    }
+
+    /* BENEFITS */
+    .benefits .benefits-card{
+        width: calc(50% - 20px);
+    }
+
+}
+
+
+
+
+
+/* MOBILE  */
+
+
+@media screen and (max-width:480px){
+
+    /* CARD-SECTION */
+    .card-row{
+        flex-direction: column;
+    }
+
+    .big-card, .card{
+        width: 100%;
+    }
+
+    .big-card{
+        flex-direction: column;
+    }
+
+    /* TESTIMONIALS */
+    .testimonial{
+        flex-direction: column;
+    }
+
+    .partners .photo-container{
+        width: 90%;
+    }
+
+    /* BENEFITS */
+    .benefits .benefits-row{
+        flex-direction: column;
+    }
+    
+    .benefits-row .benefits-card{
+        width: 100%;
+    }
+
+    /* MOBILE */
+
+    .about-us .container{
+        flex-direction: column;
+    }
+
+    .about-us .big-space, .small-space{
+        width: 100%;
+    }
+}
+
+
+
