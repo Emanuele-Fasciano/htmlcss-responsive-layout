@@ -2,6 +2,7 @@
 
 body{
     font-family: Arial, Helvetica, sans-serif;
+    overflow-x: hidden;
 }
 
 
@@ -18,7 +19,6 @@ header{
 header .container{
     justify-content: space-between;
 }
-
 
 header .links-header{
     height: 70px;
@@ -49,6 +49,8 @@ header .hamburger-menu {
     line-height: 70px;
     display: none;
 }
+
+
 /* CARD SECTION */
 
 .card-section{
@@ -76,14 +78,13 @@ header .hamburger-menu {
     border-radius: 30px;
 }
 
-
 .big-card .content{
     width: 50%;
     margin-left: 1.3rem
 }
 
 .big-card p{
-    padding: 0 1rem;
+    padding-right:2rem;
 }
 
 .big-card .app-store-btn{
@@ -112,8 +113,6 @@ header .hamburger-menu {
     margin-top: 60px;
 }
 
-
-
 .card{
     width: calc(33% - 20px);
     background-color: #B5DDFF;
@@ -135,7 +134,6 @@ header .hamburger-menu {
     text-align: center;
     font-size: 1.5rem;
     padding: 2rem 0;
-
 }
 
 .card p{
@@ -145,8 +143,8 @@ header .hamburger-menu {
     margin-bottom: 2rem;
 }
 
-/* PLANNING */
 
+/* PLANNING */
 
 .planning{
     background-color: #9792E4;
@@ -157,7 +155,6 @@ header .hamburger-menu {
     margin-top: 3rem;
     margin-right: 1rem;
     color: white;
-
 }
 
 .planning .left-col img{
@@ -179,6 +176,7 @@ header .hamburger-menu {
 }
 
 .planning .card{
+    text-align: center;
     width: 350px;
     background-color: white;
     margin-top: 32%;
@@ -186,14 +184,12 @@ header .hamburger-menu {
 }
 
 .planning .card h4{
-    text-align: center;
     margin: 1rem 0;
     font-size: 1.5rem;
     font-weight: bold;
 }
 
 .planning .card p {
-    text-align: center;
     margin-bottom: 1rem;
     line-height: 1.8rem;
 }
@@ -204,32 +200,26 @@ header .hamburger-menu {
     background-color: #9792E4;
     border-radius: 50%;
     cursor: pointer;
-
 }
 
 .planning .card .planning-btn i{
     padding: 15px;
     font-size: 1.5rem;
+    color: black;
 }
+
 
 /* PARTNERS */
 
 .partners .testimonials{
     text-align: center;
     margin: 2.5rem 0;
-
 }
 
 .partners h2{
     text-align: center;
     font-size: 1.7rem;
     color: #9792E4;
-    margin-bottom: 1.5rem;
-}
-
-.partners p{
-    text-align: center;
-    line-height: 1.5em;
     margin-bottom: 1.5rem;
 }
 
@@ -241,39 +231,30 @@ header .hamburger-menu {
     margin-bottom: 5rem;
 }
 
-
-.testimonial .photo{
-    width: 20%;
+.testimonial img{
+    max-width: 200px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: 15px;
 }
-
-
 
 .testimonial .cit{
-    width: 70%;
-}
-
-.partners .photo-container{
-    width:200px;
-    height: 200px;
-    background-image:url(./../img/testimonial1.jpg);
-    background-position: center;
-    background-size: cover;
-    border-radius: 50%;
-    margin-top: 1rem;
-    margin-left: .7rem;
-    margin-bottom: 2rem;
+    flex-grow: 1;
 }
 
 .partners .cit p{
-    padding-top: 5rem;
+    padding-top: 3rem;
     padding-left: 2rem;
-    text-align: left;
+    line-height: 1.5em;
+    margin-bottom: 1.5rem;
 }
 
 .partners .cit .name-testimonial{
     padding-left: 2rem;
-    
+
 }
+
 
 /* BENEFITS */
 
@@ -333,11 +314,10 @@ header .hamburger-menu {
     padding: 10px 30px;
     color: white;
     cursor: pointer;
-
 }
 
 
-/* About Us */
+/* ABOUT US */
 
 .about-us{
     margin-top: 6rem;
@@ -362,14 +342,12 @@ header .hamburger-menu {
 .small-space{
     width: 40%;
     flex-direction: column;
-
 }
-
 
 .small-space .about-photo{
     width:200px;
     height:200px;
-    background-image: url(./../img/testimonial1.jpg);
+    background-image: url(./../img/about.jpg);
     background-position: center;
     background-size: cover;
     border-radius: 50%;
@@ -393,7 +371,7 @@ header .hamburger-menu {
 .small-space .linkedin-btn{
     background-color: #9792E4;
     color: white;
-    padding: 5px;
+    padding: 10px;
     border-radius: 10px;
     width: 183px;
 }
@@ -405,6 +383,10 @@ header .hamburger-menu {
     background-color: #9792E4;
 }
 
+.free .footer-container{
+    text-align: center;
+}
+
 .free .text{
     text-align: center;
     color: lightgrey;
@@ -414,7 +396,6 @@ header .hamburger-menu {
 }
 
 .free h3{
- text-align: center;
  color: white;
  font-size: 2.5rem;
  font-weight: bold;
@@ -422,7 +403,6 @@ header .hamburger-menu {
 }
 
 .free h2{
-    text-align: center;
     color: #FDC15F;
     font-size: 4rem;
     font-weight: bold;
@@ -430,14 +410,12 @@ header .hamburger-menu {
 }
 
 .free p{
-    text-align: center;
     color: white;
     margin-bottom: 2rem;
 }
 
 .free .started-btn{
     display: inline-block;
-    text-align: center;
     background-color: white;
     color: #9792E4;
     padding: 15px 30px;
@@ -446,7 +424,6 @@ header .hamburger-menu {
 }
 
 .free .copyright{
-    text-align: center;
     font-size: .9rem;
     color: white;
     padding-bottom: 3rem;

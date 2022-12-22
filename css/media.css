@@ -15,15 +15,13 @@
    /* CARD SECTION */
    .card-section .big-card{
     flex-direction: column;
+    align-items: center;
    }
    
-   .card-section .big-card .content, img{
+   .card-section .big-card .content{
     width: 100%;
    }
 
-
-
-   
     /* PLANNING */
     .small-container{
         flex-direction: column;
@@ -33,13 +31,13 @@
         width: 100%;
     }
 
-    .left-col img{
-        width: 80%;
-        margin-left: 50px;
+     .small-container .right-col {
+         width: 100%;
     }
 
     .planning .card{
-        width: 190%;
+        width: 100%;
+        margin-top: 5%;
     }
 
     /* BENEFITS */
@@ -50,14 +48,9 @@
 }
 
 
-
-
-
 /* MOBILE  */
 
-
 @media screen and (max-width:480px){
-
     /* CARD-SECTION */
     .card-row{
         flex-direction: column;
@@ -71,12 +64,7 @@
     .big-card{
         flex-direction: column;
     }
-
-    /* PLANNING */
-    .planning .left-col img{
-        margin-left: 20px;
-    }
-    
+   
     /* PARTNER */
     .testimonial{
         flex-direction: column;
@@ -89,13 +77,11 @@
         padding-bottom: 1rem;
     }
 
-
     .partners .cit p {
         padding-top: 0;
         padding-left: 0;
         text-align: center;
     }
-
 
     /* BENEFITS */
     .benefits .benefits-row{
@@ -129,8 +115,6 @@
     footer p{
         font-size: .8rem;
     }
-
-
 }
 
 
